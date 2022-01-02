@@ -26,6 +26,7 @@ const addStudent = (name, NIM) => {
 const addPrices = (price) => {
   prices.push(price)
 }
+
 const priceGenerator = (people, prices) => {
   let winner = people[Math.floor(Math.random() * people.length)]
   let priceWon = prices[Math.floor(Math.random() * prices.length)]
@@ -39,6 +40,5 @@ const priceGenerator = (people, prices) => {
     console.log(`You won the ${best[prices.indexOf(priceWon)]} best price!`)
   }
 }
-
 
 priceGenerator(students, prices)
