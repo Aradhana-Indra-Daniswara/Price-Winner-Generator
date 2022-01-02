@@ -24,7 +24,7 @@ const addStudent = (name, NIM) => {
 }
 
 const addPrices = (price) => {
-  prices.push()
+  prices.push(price)
 }
 const priceGenerator = (people, prices) => {
   let winner = people[Math.floor(Math.random() * people.length)]
